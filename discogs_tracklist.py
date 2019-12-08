@@ -1,19 +1,12 @@
 #! usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from tracklist import choose_database, print_from_url, make_tracklist_from
-import sys
+from tracklist import choose_database, make_tracklist_from
 
 try:
-    try:
-        releases = choose_database()[0]
-    except IndexError:
-        releases = print_from_url()
-    # write()
+    releases = choose_database()[0]
     make_tracklist_from(releases)
-    sys.stdout.close()
     exit()
 except KeyboardInterrupt:
     print (" [+] closing program ")
-    sys.stdout.close()
     exit()

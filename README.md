@@ -17,7 +17,8 @@ $ python discogs_tracklist.py
 ```
 
 ## Usage
-Copy token from your discogs account at https://www.discogs.com/settings/developers
+You have to be logged in to your Discogs account. 
+Then simply copy your token from https://www.discogs.com/settings/developers
 ```sh
 Paste your token:
 ```
@@ -34,4 +35,3 @@ Writing - for now just uncomment the line
 ```
 ToDo:
 - writing function
-- pagination of inventory
