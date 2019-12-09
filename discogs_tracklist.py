@@ -4,7 +4,7 @@
 from tracklist import choose_database, make_tracklist_from
 
 try:
-    releases = choose_database()[0]
+    releases = choose_database()
     make_tracklist_from(releases)
     exit()
 except KeyboardInterrupt:

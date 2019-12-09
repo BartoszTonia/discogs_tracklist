@@ -1,7 +1,6 @@
 #! usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 from retry import retry
 from client import login
 from discogs_client.exceptions import HTTPError
@@ -25,7 +24,7 @@ def choose_database():
         database.append([listing.release.id for listing in user.inventory])
         print "Len = " + str(len(database))
         print " Inventory of " + input_user + " created"
-    return database
+    return database[0]
 
 
 @retry(HTTPError, delay=5, tries=-1)
