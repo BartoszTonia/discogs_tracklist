@@ -23,6 +23,7 @@ def choose_database():
         user = discogs.user(input_user)
         print "\n Fetching items..."
         database.append([listing.release.id for listing in user.inventory])
+        print "Len = " + str(len(database))
         print " Inventory of " + input_user + " created"
     return database
 

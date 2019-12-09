@@ -2,4 +2,6 @@
 venv
 *.pyc
 my_client.py
+kovbla_log
+kovbla.txt
 
