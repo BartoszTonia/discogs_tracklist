@@ -8,12 +8,12 @@ Clone this repository and install discogs_client
 
 ```sh
 git clone https://github.com/BartoszTonia/discogs_tracklist.git
-pip install discogs_client
 ```
 Run
 
 ```sh
-$ python discogs_tracklist.py
+pip install -r requirements.txt
+$ python3 discogs_tracklist.py
 ```
 
 ## Usage
