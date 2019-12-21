@@ -6,7 +6,7 @@ discogs = login().client
 screen_desc = "Choose your input database: \n 1 - wantlist \n 2 - collection \n 3 - seller inventory \n"
 
 
-def choose_database():
+def call_database():
     choice = input(screen_desc)
     if choice == '1':
         return wantlist_db()
