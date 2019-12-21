@@ -1,9 +1,16 @@
 from tracklist import choose_database, make_tracklist_from
 
-try:
-    releases = choose_database()
-    make_tracklist_from(releases)
-    exit()
-except KeyboardInterrupt:
-    print (" [+] closing program ")
-    exit()
+while True:
+    try:
+        releases = choose_database()
+        print(releases)
+        make_tracklist_from(releases)
+    # except NameError:
+    #     print(" [-] Wrong name, try again")
+    #     pass
+    except TypeError:
+        print(" [-] Wrong input")
+        pass
+    except KeyboardInterrupt:
+        print(" [+] closing program ")
+        exit()
